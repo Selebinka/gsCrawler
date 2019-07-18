@@ -1,6 +1,6 @@
 
 __pycache__/
-
+*.sqlite3
 # Distribution / packaging
 .Python
 venv/

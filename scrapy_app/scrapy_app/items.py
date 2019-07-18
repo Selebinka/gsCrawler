@@ -7,7 +7,7 @@
 
 import scrapy
 from scrapy_djangoitem import DjangoItem
-from main.models import GoogleResult
+from main.models import GoogleResultModel
 
 class GoogleResultItem(DjangoItem):
-    django_model = GoogleResult
+    django_model = GoogleResultModel

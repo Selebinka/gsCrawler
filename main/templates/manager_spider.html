@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="col-lg-8 offset-3">
+    <form class="my-5" action="/result/" method="post">
+        {% csrf_token %}  
+            {{ form }}
+        <input type="submit" class="btn btn-primary my-2" value="RunCrawl">
+    </form>
+</div>    
+        
+{% endblock %}
+

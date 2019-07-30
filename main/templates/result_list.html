@@ -1,7 +1,35 @@
 {% extends 'base.html' %}
 
+{% load widget_tweaks %}
+
 {% block content %}
-<div class="card border-dark mb-3">
+<div class="card border-dark mb-2 mt-2">
+        <form method="get">
+            <div class="well">
+                <div class="row">
+                    <div class="form-group col-sm-4 col-md-3">
+                        {{ result_filter.form.keywords.label_tag }}
+                        {% render_field result_filter.form.keywords class="form-control" %}
+                    </div>
+                    <div class="form-group col-sm-4 col-md-3">
+                        {{ result_filter.form.link.label_tag }}
+                        {% render_field result_filter.form.link class="form-control" %}
+                    </div>
+                    <div class="form-group col-sm-4 col-md-3">
+                        {{ result_filter.form.date.label_tag }}
+                        {% render_field result_filter.form.date class="form-control" %}
+                    </div>            
+                    <div class="form-group mt-4">
+                        <button type="submit" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-search"></span>Search
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+</div>
+
+<div class="card border-dark mb-2">
     <div class="card-header">
         <table class="table table-hover">
             <thead class="thead-dark">
@@ -10,17 +38,19 @@
                     <th scope="col">Keywords</th>
                     <th scope="col">Title</th>
                     <th scope="col">Link</th>
+                    <th scope="col">PositionID</th>
                 </tr>
             </thead>
             <tbody>
-                {% for result in search_result %}
-                    <tr>
-                        <th scope="row">{{ result.date }}</th>
-                        <td>{{ result.keywords }}</td>
-                        <td>{{ result.title }}</td>                            
-                        <td><a href="{{ result.link }}">{{ result.link }}</a></td>
-                    </tr>
-                {% endfor %}
+            {% for result in result_filter.qs %}
+                <tr>
+                    <th scope="row">{{ result.date }}</th>
+                    <td>{{ result.keywords }}</td>
+                    <td>{{ result.title }}</td>                            
+                    <td><a href="{{ result.link }}">{{ result.link }}</a></td>
+                    <td>{{ result.positionID }}</td>
+                </tr>
+            {% endfor %}
             </tbody>
         </table>
     </div>

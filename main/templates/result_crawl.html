@@ -12,15 +12,17 @@
                         <th scope="col">Keywords</th>
                         <th scope="col">Title</th>
                         <th scope="col">Link</th>
+                        <th scope="col">PositionID</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {% for result in spider_result %}
+                    {% for result in search_result  %}
                         <tr>
                             <th scope="row">{{ result.date }}</th>
                             <td>{{ result.keywords }}</td>
                             <td>{{ result.title }}</td>                            
                             <td><a href="{{ result.link }}">{{ result.link }}</a></td>
+                            <td>{{ result.positionID }}</td>
                         </tr>
                     {% endfor %}
                 </tbody>

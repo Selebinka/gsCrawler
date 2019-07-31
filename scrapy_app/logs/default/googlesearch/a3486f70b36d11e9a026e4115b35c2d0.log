@@ -1,0 +1,838 @@
+2019-07-31 11:31:51 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: scrapy_app)
+2019-07-31 11:31:51 [scrapy.utils.log] INFO: Versions: lxml 4.3.4.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.1, Python 3.6.8 (default, Jan 14 2019, 11:02:34) - [GCC 8.0.1 20180414 (experimental) [trunk revision 259383]], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.7, Platform Linux-4.18.0-25-generic-x86_64-with-Ubuntu-18.04-bionic
+2019-07-31 11:31:51 [scrapy.crawler] INFO: Overridden settings: {'AUTOTHROTTLE_ENABLED': True, 'AUTOTHROTTLE_START_DELAY': 3, 'BOT_NAME': 'scrapy_app', 'COOKIES_ENABLED': False, 'LOG_FILE': 'logs/default/googlesearch/a3486f70b36d11e9a026e4115b35c2d0.log', 'NEWSPIDER_MODULE': 'scrapy_app.spiders', 'SPIDER_MODULES': ['scrapy_app.spiders'], 'USER_AGENT': 'Chrome/61.0.3163.79'}
+2019-07-31 11:31:51 [scrapy.extensions.telnet] INFO: Telnet Password: 85d622b1d8e5f4b8
+2019-07-31 11:31:51 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2019-07-31 11:31:51 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-07-31 11:31:51 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-07-31 11:31:51 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_app.pipelines.ScrapyAppPipeline']
+2019-07-31 11:31:51 [scrapy.core.engine] INFO: Spider opened
+2019-07-31 11:31:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-07-31 11:31:51 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-07-31 11:31:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=scrapy> (referer: None)
+2019-07-31 11:31:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy>
+{'keywords': 'scrapy',
+ 'link': 'https://scrapy.org',
+ 'positionID': 1,
+ 'title': 'Scrapy | A Fast and Powerful Scraping and Web Crawling Framework'}
+2019-07-31 11:31:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy>
+{'keywords': 'scrapy',
+ 'link': 'https://docs.scrapy.org',
+ 'positionID': 2,
+ 'title': 'Scrapy 1.7 documentation — Scrapy 1.7.2 documentation'}
+2019-07-31 11:31:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy>
+{'keywords': 'scrapy',
+ 'link': 'https://habr.com',
+ 'positionID': 3,
+ 'title': 'Scrapy: собираем данные и сохраняем в базу данных / Хабр - Habr'}
+2019-07-31 11:31:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy>
+{'keywords': 'scrapy',
+ 'link': 'https://codeguida.com',
+ 'positionID': 4,
+ 'title': 'Створення веб павука з Python та Scrapy - Codeguida'}
+2019-07-31 11:31:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy>
+{'keywords': 'scrapy',
+ 'link': 'https://en.wikipedia.org',
+ 'positionID': 5,
+ 'title': 'Scrapy - Wikipedia'}
+2019-07-31 11:31:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy>
+{'keywords': 'scrapy',
+ 'link': 'https://github.com',
+ 'positionID': 6,
+ 'title': 'scrapy/scrapy: Scrapy, a fast high-level web crawling ... - GitHub'}
+2019-07-31 11:31:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy>
+{'keywords': 'scrapy',
+ 'link': 'https://www.8host.com',
+ 'positionID': 7,
+ 'title': 'Web scraping с помощью Scrapy и Python 3 | www.8host.com'}
+2019-07-31 11:31:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy>
+{'keywords': 'scrapy',
+ 'link': 'https://www.youtube.com',
+ 'positionID': 8,
+ 'title': 'Scrapy: создаём краулер парсер на Python с нуля [GeekBrains ...'}
+2019-07-31 11:31:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy>
+{'keywords': 'scrapy',
+ 'link': 'https://www.datacamp.com',
+ 'positionID': 9,
+ 'title': 'Making Web Crawlers Using Scrapy for Python (article) - DataCamp'}
+2019-07-31 11:31:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy>
+{'keywords': 'scrapy',
+ 'link': 'https://towardsdatascience.com',
+ 'positionID': 10,
+ 'title': 'How to Scrape the Web using Python with ScraPy Spiders'}
+2019-07-31 11:31:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=91FBXZiUNIXGsAXsiZOQDw&start=10> (referer: https://www.google.com.ua/search?q=scrapy)
+2019-07-31 11:31:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=91FBXZiUNIXGsAXsiZOQDw&start=10>
+{'keywords': 'scrapy',
+ 'link': 'https://www.digitalocean.com',
+ 'positionID': 11,
+ 'title': 'Crawling and Scraping Web Pages with Scrapy and Python 3 ...'}
+2019-07-31 11:31:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=91FBXZiUNIXGsAXsiZOQDw&start=10>
+{'keywords': 'scrapy',
+ 'link': 'https://www.accordbox.com',
+ 'positionID': 12,
+ 'title': 'Scrapy Tutorial #5: How To Create Simple Scrapy Spider | AccordBox'}
+2019-07-31 11:31:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=91FBXZiUNIXGsAXsiZOQDw&start=10>
+{'keywords': 'scrapy',
+ 'link': 'https://www.accordbox.com',
+ 'positionID': 13,
+ 'title': 'Scrapy Tutorial #1: Scrapy VS Beautiful Soup | AccordBox'}
+2019-07-31 11:31:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=91FBXZiUNIXGsAXsiZOQDw&start=10>
+{'keywords': 'scrapy',
+ 'link': 'https://www.codementor.io',
+ 'positionID': 14,
+ 'title': 'Writing a Simple Web Scraper using Scrapy | Codementor'}
+2019-07-31 11:31:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=91FBXZiUNIXGsAXsiZOQDw&start=10>
+{'keywords': 'scrapy',
+ 'link': 'https://towardsdatascience.com',
+ 'positionID': 15,
+ 'title': 'Web Scraping: A Less Brief Overview of Scrapy and Selenium, Part II'}
+2019-07-31 11:31:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=91FBXZiUNIXGsAXsiZOQDw&start=10>
+{'keywords': 'scrapy',
+ 'link': 'https://medium.com',
+ 'positionID': 16,
+ 'title': 'How To Develop Your First Web Crawler Using Python Scrapy'}
+2019-07-31 11:31:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=91FBXZiUNIXGsAXsiZOQDw&start=10>
+{'keywords': 'scrapy',
+ 'link': 'https://www.analyticsvidhya.com',
+ 'positionID': 17,
+ 'title': 'Web Scraping in Python using Scrapy (with multiple examples)'}
+2019-07-31 11:31:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=91FBXZiUNIXGsAXsiZOQDw&start=10>
+{'keywords': 'scrapy',
+ 'link': 'https://scrapinghub.com',
+ 'positionID': 18,
+ 'title': 'Scrapy - The Most Advanced Platform for Running Web Crawlers'}
+2019-07-31 11:31:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=91FBXZiUNIXGsAXsiZOQDw&start=10>
+{'keywords': 'scrapy',
+ 'link': 'https://pypi.org',
+ 'positionID': 19,
+ 'title': 'Scrapy · PyPI'}
+2019-07-31 11:31:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=91FBXZiUNIXGsAXsiZOQDw&start=10>
+{'keywords': 'scrapy',
+ 'link': 'https://www.tutorialspoint.com',
+ 'positionID': 20,
+ 'title': 'Scrapy Tutorial'}
+2019-07-31 11:32:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=-1FBXY3ZJsrorgStvZLwDQ&start=20> (referer: https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=91FBXZiUNIXGsAXsiZOQDw&start=10)
+2019-07-31 11:32:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=-1FBXY3ZJsrorgStvZLwDQ&start=20>
+{'keywords': 'scrapy',
+ 'link': 'https://pypi.org',
+ 'positionID': 21,
+ 'title': 'Scrapy · PyPI'}
+2019-07-31 11:32:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=-1FBXY3ZJsrorgStvZLwDQ&start=20>
+{'keywords': 'scrapy',
+ 'link': 'https://www.linode.com',
+ 'positionID': 22,
+ 'title': 'Use Scrapy to Extract Data From HTML Tags - Linode'}
+2019-07-31 11:32:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=-1FBXY3ZJsrorgStvZLwDQ&start=20>
+{'keywords': 'scrapy',
+ 'link': 'https://hackernoon.com',
+ 'positionID': 23,
+ 'title': 'Scrapy or Selenium? - By Low Wei Hong - Hacker Noon'}
+2019-07-31 11:32:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=-1FBXY3ZJsrorgStvZLwDQ&start=20>
+{'keywords': 'scrapy',
+ 'link': 'https://djinni.co',
+ 'positionID': 24,
+ 'title': 'Вакансия Python + Scrapy Developer,Python, Киев, Харьков, Львов ...'}
+2019-07-31 11:32:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=-1FBXY3ZJsrorgStvZLwDQ&start=20>
+{'keywords': 'scrapy',
+ 'link': 'https://blog.theodo.com',
+ 'positionID': 25,
+ 'title': "Scraping with Scrapy and Django Integration - Theodo - Theodo's "
+          'blog'}
+2019-07-31 11:32:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=-1FBXY3ZJsrorgStvZLwDQ&start=20>
+{'keywords': 'scrapy',
+ 'link': 'https://www.geeksforgeeks.org',
+ 'positionID': 26,
+ 'title': 'Implementing Web Scraping in Python with Scrapy - GeeksforGeeks'}
+2019-07-31 11:32:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=-1FBXY3ZJsrorgStvZLwDQ&start=20>
+{'keywords': 'scrapy',
+ 'link': 'https://www.smashingmagazine.com',
+ 'positionID': 27,
+ 'title': 'The Ultimate Guide To Building Scalable Web Scrapers With Scrapy '
+          '...'}
+2019-07-31 11:32:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=-1FBXY3ZJsrorgStvZLwDQ&start=20>
+{'keywords': 'scrapy',
+ 'link': 'https://anaconda.org',
+ 'positionID': 28,
+ 'title': 'Scrapy :: Anaconda Cloud'}
+2019-07-31 11:32:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=-1FBXY3ZJsrorgStvZLwDQ&start=20>
+{'keywords': 'scrapy',
+ 'link': 'https://www.scrapehero.com',
+ 'positionID': 29,
+ 'title': 'How to scrape Alibaba.com product data using Scrapy | ScrapeHero'}
+2019-07-31 11:32:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=_1FBXZXhFq27tgWkj4CAAw&start=30> (referer: https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=-1FBXY3ZJsrorgStvZLwDQ&start=20)
+2019-07-31 11:32:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=_1FBXZXhFq27tgWkj4CAAw&start=30>
+{'keywords': 'scrapy',
+ 'link': 'https://jobs.dou.ua',
+ 'positionID': 30,
+ 'title': 'Junior Python Developer (Scrapy) в Competera, $400–500, Киев ...'}
+2019-07-31 11:32:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=_1FBXZXhFq27tgWkj4CAAw&start=30>
+{'keywords': 'scrapy',
+ 'link': 'https://kite.com',
+ 'positionID': 31,
+ 'title': 'Web Scraping with Scrapy: Advanced Examples - Kite Blog'}
+2019-07-31 11:32:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=_1FBXZXhFq27tgWkj4CAAw&start=30>
+{'keywords': 'scrapy',
+ 'link': 'https://likegeeks.com',
+ 'positionID': 32,
+ 'title': 'Create your first Python web crawler using Scrapy - Like Geeks'}
+2019-07-31 11:32:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=_1FBXZXhFq27tgWkj4CAAw&start=30>
+{'keywords': 'scrapy',
+ 'link': 'https://pub.dev',
+ 'positionID': 33,
+ 'title': 'scrapy | Dart Package - Dart Pub'}
+2019-07-31 11:32:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=_1FBXZXhFq27tgWkj4CAAw&start=30>
+{'keywords': 'scrapy',
+ 'link': 'https://scrapt.readthedocs.io',
+ 'positionID': 34,
+ 'title': 'Проксирование в Scrapy — Документация scrapt 0.1.1'}
+2019-07-31 11:32:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=_1FBXZXhFq27tgWkj4CAAw&start=30>
+{'keywords': 'scrapy',
+ 'link': 'https://qaru.site',
+ 'positionID': 35,
+ 'title': 'json - scrapy из script вывода в json - Qaru'}
+2019-07-31 11:32:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=_1FBXZXhFq27tgWkj4CAAw&start=30>
+{'keywords': 'scrapy',
+ 'link': 'https://www.pluralsight.com',
+ 'positionID': 36,
+ 'title': 'Web Scraping with Scrapy | Pluralsight'}
+2019-07-31 11:32:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=_1FBXZXhFq27tgWkj4CAAw&start=30>
+{'keywords': 'scrapy',
+ 'link': 'https://stackoverflow.com',
+ 'positionID': 37,
+ 'title': "Newest 'scrapy' Questions - Stack Overflow"}
+2019-07-31 11:32:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=_1FBXZXhFq27tgWkj4CAAw&start=30>
+{'keywords': 'scrapy',
+ 'link': 'https://librarycarpentry.org',
+ 'positionID': 38,
+ 'title': 'Introduction to web scraping: Web scraping using Python and Scrapy'}
+2019-07-31 11:32:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=_1FBXZXhFq27tgWkj4CAAw&start=30>
+{'keywords': 'scrapy',
+ 'link': 'https://www.mikulskibartosz.name',
+ 'positionID': 39,
+ 'title': 'How to use Scrapy to follow links on the scraped pages | Bartosz '
+          '...'}
+2019-07-31 11:32:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=A1JBXc6YEIi4tQXgnauQBg&start=40> (referer: https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=_1FBXZXhFq27tgWkj4CAAw&start=30)
+2019-07-31 11:32:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=A1JBXc6YEIi4tQXgnauQBg&start=40>
+{'keywords': 'scrapy',
+ 'link': 'https://rlanders.net',
+ 'positionID': 40,
+ 'title': 'Web Scraping of Psychological Data with Scrapy - Richard N ...'}
+2019-07-31 11:32:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=A1JBXc6YEIi4tQXgnauQBg&start=40>
+{'keywords': 'scrapy',
+ 'link': 'https://readthedocs.org',
+ 'positionID': 41,
+ 'title': '[PDF] Scrapy Documentation - Read the Docs'}
+2019-07-31 11:32:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=A1JBXc6YEIi4tQXgnauQBg&start=40>
+{'keywords': 'scrapy',
+ 'link': 'https://scrapingclub.com',
+ 'positionID': 42,
+ 'title': 'Scrapy Tutorial #9: How To Use Scrapy Item - ScrapingClub'}
+2019-07-31 11:32:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=A1JBXc6YEIi4tQXgnauQBg&start=40>
+{'keywords': 'scrapy',
+ 'link': 'https://www.merriam-webster.com',
+ 'positionID': 43,
+ 'title': 'Scrapy | Definition of Scrapy by Merriam-Webster'}
+2019-07-31 11:32:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=A1JBXc6YEIi4tQXgnauQBg&start=40>
+{'keywords': 'scrapy',
+ 'link': 'https://arbisoft.com',
+ 'positionID': 44,
+ 'title': 'Scrapy and Realtime Crawling: To Do or Not To Do? | Arbisoft'}
+2019-07-31 11:32:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=A1JBXc6YEIi4tQXgnauQBg&start=40>
+{'keywords': 'scrapy',
+ 'link': 'https://gis-lab.info',
+ 'positionID': 45,
+ 'title': 'Парсинг сайтов с помощью фреймворка Scrapy - GIS-Lab'}
+2019-07-31 11:32:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=A1JBXc6YEIi4tQXgnauQBg&start=40>
+{'keywords': 'scrapy',
+ 'link': 'https://qaru.site',
+ 'positionID': 46,
+ 'title': 'Нажмите кнопку в Scrapy - python | Qaru'}
+2019-07-31 11:32:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=A1JBXc6YEIi4tQXgnauQBg&start=40>
+{'keywords': 'scrapy',
+ 'link': 'https://cz.pycon.org',
+ 'positionID': 47,
+ 'title': 'Web scraping with Scrapy – a workshop with Tomáš Bartek – PyCon ...'}
+2019-07-31 11:32:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=A1JBXc6YEIi4tQXgnauQBg&start=40>
+{'keywords': 'scrapy',
+ 'link': 'https://realpython.com',
+ 'positionID': 48,
+ 'title': 'Web Scraping with Scrapy and MongoDB – Real Python'}
+2019-07-31 11:32:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=A1JBXc6YEIi4tQXgnauQBg&start=40>
+{'keywords': 'scrapy',
+ 'link': 'https://scrapingauthority.com',
+ 'positionID': 49,
+ 'title': 'Crawling with Scrapy - Javascript Generated Content - Scraping ...'}
+2019-07-31 11:32:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=BlJBXdKZOYPnrgS5_5aIAg&start=50> (referer: https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=A1JBXc6YEIi4tQXgnauQBg&start=40)
+2019-07-31 11:32:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=BlJBXdKZOYPnrgS5_5aIAg&start=50>
+{'keywords': 'scrapy',
+ 'link': 'https://pythonista.io',
+ 'positionID': 50,
+ 'title': 'Web Scraping Automatizado Con Scrapy — Pythonista'}
+2019-07-31 11:32:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=BlJBXdKZOYPnrgS5_5aIAg&start=50>
+{'keywords': 'scrapy',
+ 'link': 'https://www.simplified.guide',
+ 'positionID': 51,
+ 'title': 'How to scrape HTML table with Scrapy - Simplified Guide'}
+2019-07-31 11:32:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=BlJBXdKZOYPnrgS5_5aIAg&start=50>
+{'keywords': 'scrapy',
+ 'link': 'https://www.archlinux.org',
+ 'positionID': 52,
+ 'title': 'scrapy 1.6.0-1 (any) - Arch Linux'}
+2019-07-31 11:32:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=BlJBXdKZOYPnrgS5_5aIAg&start=50>
+{'keywords': 'scrapy',
+ 'link': 'https://www.npmjs.com',
+ 'positionID': 53,
+ 'title': 'node-scrapy - npm'}
+2019-07-31 11:32:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=BlJBXdKZOYPnrgS5_5aIAg&start=50>
+{'keywords': 'scrapy',
+ 'link': 'https://mherman.org',
+ 'positionID': 54,
+ 'title': 'Scraping Web Pages with Scrapy - Michael Herman'}
+2019-07-31 11:32:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=BlJBXdKZOYPnrgS5_5aIAg&start=50>
+{'keywords': 'scrapy',
+ 'link': 'https://tyvik.ru',
+ 'positionID': 55,
+ 'title': 'Библиотека для парсинга сайта Scrapy'}
+2019-07-31 11:32:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=BlJBXdKZOYPnrgS5_5aIAg&start=50>
+{'keywords': 'scrapy',
+ 'link': 'https://www.imagescape.com',
+ 'positionID': 56,
+ 'title': 'Scraping pdf, doc, and docx with Scrapy | Imaginary Landscape'}
+2019-07-31 11:32:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=BlJBXdKZOYPnrgS5_5aIAg&start=50>
+{'keywords': 'scrapy',
+ 'link': 'https://pycoder.ru',
+ 'positionID': 57,
+ 'title': 'Пишем простой парсер на Scrapy | Блог python программиста'}
+2019-07-31 11:32:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=BlJBXdKZOYPnrgS5_5aIAg&start=50>
+{'keywords': 'scrapy',
+ 'link': 'https://www.freelancer.com',
+ 'positionID': 58,
+ 'title': 'Scrapy Jobs for July 2019 | Freelancer'}
+2019-07-31 11:32:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=BlJBXdKZOYPnrgS5_5aIAg&start=50>
+{'keywords': 'scrapy',
+ 'link': 'https://amaral.northwestern.edu',
+ 'positionID': 59,
+ 'title': 'A quick introduction to web crawling using Scrapy - Part I - Blog '
+          '...'}
+2019-07-31 11:32:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=ClJBXf2RJO76qwGplo34Cw&start=60> (referer: https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=BlJBXdKZOYPnrgS5_5aIAg&start=50)
+2019-07-31 11:32:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=ClJBXf2RJO76qwGplo34Cw&start=60>
+{'keywords': 'scrapy',
+ 'link': 'https://packagecontrol.io',
+ 'positionID': 60,
+ 'title': 'Scrapy - Packages - Package Control'}
+2019-07-31 11:32:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=ClJBXf2RJO76qwGplo34Cw&start=60>
+{'keywords': 'scrapy',
+ 'link': 'https://books.google.com.ua',
+ 'positionID': 61,
+ 'title': 'Learning Scrapy'}
+2019-07-31 11:32:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=ClJBXf2RJO76qwGplo34Cw&start=60>
+{'keywords': 'scrapy',
+ 'link': 'https://www.parsehub.com',
+ 'positionID': 62,
+ 'title': 'ParseHub vs. Scrapy Comparison – which alternative is better for '
+          '...'}
+2019-07-31 11:32:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=ClJBXf2RJO76qwGplo34Cw&start=60>
+{'keywords': 'scrapy',
+ 'link': 'https://blog.florian-hopf.de',
+ 'positionID': 63,
+ 'title': 'Scrapy and Elasticsearch · Florian Hopf'}
+2019-07-31 11:32:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=ClJBXf2RJO76qwGplo34Cw&start=60>
+{'keywords': 'scrapy',
+ 'link': 'https://www.pyimagesearch.com',
+ 'positionID': 64,
+ 'title': 'Scraping images with Python and Scrapy - PyImageSearch'}
+2019-07-31 11:32:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=ClJBXf2RJO76qwGplo34Cw&start=60>
+{'keywords': 'scrapy',
+ 'link': 'https://www.tamboadventureperu.com',
+ 'positionID': 65,
+ 'title': 'Storm crawler vs scrapy'}
+2019-07-31 11:32:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=ClJBXf2RJO76qwGplo34Cw&start=60>
+{'keywords': 'scrapy',
+ 'link': 'https://sangaline.com',
+ 'positionID': 66,
+ 'title': 'Advanced Web Scraping: Bypassing "403 Forbidden," captchas, and ...'}
+2019-07-31 11:32:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=ClJBXf2RJO76qwGplo34Cw&start=60>
+{'keywords': 'scrapy',
+ 'link': 'https://books.google.com.ua',
+ 'positionID': 67,
+ 'title': 'Python Penetration Testing Cookbook: Practical recipes on ...'}
+2019-07-31 11:32:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=ClJBXf2RJO76qwGplo34Cw&start=60>
+{'keywords': 'scrapy',
+ 'link': 'https://books.google.com.ua',
+ 'positionID': 68,
+ 'title': 'Hands-On Web Scraping with Python: Perform advanced scraping ...'}
+2019-07-31 11:32:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=ClJBXf2RJO76qwGplo34Cw&start=60>
+{'keywords': 'scrapy',
+ 'link': 'https://bot.smsok.net',
+ 'positionID': 69,
+ 'title': 'Scrapy shopify'}
+2019-07-31 11:32:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=DlJBXcG9GJHQrgSlrojQCw&start=70> (referer: https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=ClJBXf2RJO76qwGplo34Cw&start=60)
+2019-07-31 11:32:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=DlJBXcG9GJHQrgSlrojQCw&start=70>
+{'keywords': 'scrapy',
+ 'link': 'https://bot.smsok.net',
+ 'positionID': 70,
+ 'title': 'Scrapy shopify'}
+2019-07-31 11:32:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=DlJBXcG9GJHQrgSlrojQCw&start=70>
+{'keywords': 'scrapy',
+ 'link': 'https://www.oschina.net',
+ 'positionID': 71,
+ 'title': 'Scrapy 1.7.0 发布，Python 爬虫框架- OSCHINA'}
+2019-07-31 11:32:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=DlJBXcG9GJHQrgSlrojQCw&start=70>
+{'keywords': 'scrapy',
+ 'link': 'https://stg.arabhardware.net',
+ 'positionID': 72,
+ 'title': 'Scrapy shopify'}
+2019-07-31 11:32:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=DlJBXcG9GJHQrgSlrojQCw&start=70>
+{'keywords': 'scrapy',
+ 'link': 'https://todaylivematch.club',
+ 'positionID': 73,
+ 'title': 'Scrapy example'}
+2019-07-31 11:32:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=DlJBXcG9GJHQrgSlrojQCw&start=70>
+{'keywords': 'scrapy',
+ 'link': 'https://www.izmirpalyaco.com',
+ 'positionID': 74,
+ 'title': 'Storm crawler vs scrapy'}
+2019-07-31 11:32:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=DlJBXcG9GJHQrgSlrojQCw&start=70>
+{'keywords': 'scrapy',
+ 'link': 'https://www.lfd.uci.edu',
+ 'positionID': 75,
+ 'title': 'Python Extension Packages for Windows - Christoph Gohlke'}
+2019-07-31 11:32:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=DlJBXcG9GJHQrgSlrojQCw&start=70>
+{'keywords': 'scrapy',
+ 'link': 'https://www.comproautofacile.it',
+ 'positionID': 76,
+ 'title': 'Python proxy scraper - Compro Auto Facile'}
+2019-07-31 11:32:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=DlJBXcG9GJHQrgSlrojQCw&start=70>
+{'keywords': 'scrapy',
+ 'link': 'https://amelioratebiotech.com',
+ 'positionID': 77,
+ 'title': 'Pycharm web scraping - ameliorate biotech private limited'}
+2019-07-31 11:32:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=DlJBXcG9GJHQrgSlrojQCw&start=70>
+{'keywords': 'scrapy',
+ 'link': 'https://betterlivingweb.info',
+ 'positionID': 78,
+ 'title': 'Scrapy example - Betterlivingweb.info is up for sale'}
+2019-07-31 11:32:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=DlJBXcG9GJHQrgSlrojQCw&start=70>
+{'keywords': 'scrapy',
+ 'link': 'https://www.freelancer.pk',
+ 'positionID': 79,
+ 'title': 'Fix Existing Scrapers | Web Scraping | Software Architecture ...'}
+2019-07-31 11:32:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=ElJBXdaeEY2qsgWOh4rwDw&start=80> (referer: https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=DlJBXcG9GJHQrgSlrojQCw&start=70)
+2019-07-31 11:32:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=ElJBXdaeEY2qsgWOh4rwDw&start=80>
+{'keywords': 'scrapy',
+ 'link': 'https://agrawalcaterers.com',
+ 'positionID': 80,
+ 'title': 'Storm crawler vs scrapy - Agrawal Caterers'}
+2019-07-31 11:32:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=ElJBXdaeEY2qsgWOh4rwDw&start=80>
+{'keywords': 'scrapy',
+ 'link': 'https://www.scrapyabalorios.com',
+ 'positionID': 81,
+ 'title': 'Scrapyabalorios: Material para abalorios, manualidades y ...'}
+2019-07-31 11:32:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=ElJBXdaeEY2qsgWOh4rwDw&start=80>
+{'keywords': 'scrapy',
+ 'link': 'https://www.hairfaire.com',
+ 'positionID': 82,
+ 'title': 'Web crawler python code'}
+2019-07-31 11:32:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=ElJBXdaeEY2qsgWOh4rwDw&start=80>
+{'keywords': 'scrapy',
+ 'link': 'https://www.lizenghai.com',
+ 'positionID': 83,
+ 'title': '《精通Python爬虫框架Scrapy》PDF下载– Python量化投资'}
+2019-07-31 11:32:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=ElJBXdaeEY2qsgWOh4rwDw&start=80>
+{'keywords': 'scrapy',
+ 'link': 'https://www.jianshu.com',
+ 'positionID': 84,
+ 'title': 'scrapy - 简书'}
+2019-07-31 11:32:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=ElJBXdaeEY2qsgWOh4rwDw&start=80>
+{'keywords': 'scrapy',
+ 'link': 'https://enchancebody.com',
+ 'positionID': 85,
+ 'title': 'How to scrape google reviews using python'}
+2019-07-31 11:32:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=ElJBXdaeEY2qsgWOh4rwDw&start=80>
+{'keywords': 'scrapy',
+ 'link': 'https://www.305clean.com',
+ 'positionID': 86,
+ 'title': 'Python crawler - 305 Clean'}
+2019-07-31 11:32:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=ElJBXdaeEY2qsgWOh4rwDw&start=80>
+{'keywords': 'scrapy',
+ 'link': 'https://topsmasher.com',
+ 'positionID': 87,
+ 'title': 'How to build a web crawler - Top Smasher'}
+2019-07-31 11:32:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=ElJBXdaeEY2qsgWOh4rwDw&start=80>
+{'keywords': 'scrapy',
+ 'link': 'https://www.foxfieldleather.co.uk',
+ 'positionID': 88,
+ 'title': 'Telegram scraping - Foxfield leather'}
+2019-07-31 11:32:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=ElJBXdaeEY2qsgWOh4rwDw&start=80>
+{'keywords': 'scrapy',
+ 'link': 'https://analytixon.com',
+ 'positionID': 89,
+ 'title': 'Fresh from the Python Package Index | AnalytiXon'}
+2019-07-31 11:32:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=FlJBXZqnFomgtQWQzquQDw&start=90> (referer: https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=ElJBXdaeEY2qsgWOh4rwDw&start=80)
+2019-07-31 11:32:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=FlJBXZqnFomgtQWQzquQDw&start=90>
+{'keywords': 'scrapy',
+ 'link': 'https://analytixon.com',
+ 'positionID': 90,
+ 'title': 'Fresh from the Python Package Index | AnalytiXon'}
+2019-07-31 11:32:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=FlJBXZqnFomgtQWQzquQDw&start=90>
+{'keywords': 'scrapy',
+ 'link': 'https://blog.mrvoc.net',
+ 'positionID': 91,
+ 'title': 'Scraper python'}
+2019-07-31 11:32:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=FlJBXZqnFomgtQWQzquQDw&start=90>
+{'keywords': 'scrapy',
+ 'link': 'https://artdecor.site',
+ 'positionID': 92,
+ 'title': 'Redis web crawler'}
+2019-07-31 11:32:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=FlJBXZqnFomgtQWQzquQDw&start=90>
+{'keywords': 'scrapy',
+ 'link': 'https://aibaimi.com',
+ 'positionID': 93,
+ 'title': 'Facebook scraping python 2018'}
+2019-07-31 11:32:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=FlJBXZqnFomgtQWQzquQDw&start=90>
+{'keywords': 'scrapy',
+ 'link': 'https://alive-graphics.com',
+ 'positionID': 94,
+ 'title': 'Scapy python 3 tutorial'}
+2019-07-31 11:32:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=FlJBXZqnFomgtQWQzquQDw&start=90>
+{'keywords': 'scrapy',
+ 'link': 'https://www.makeupbyaayusha.com',
+ 'positionID': 95,
+ 'title': 'Scraper python'}
+2019-07-31 11:32:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=FlJBXZqnFomgtQWQzquQDw&start=90>
+{'keywords': 'scrapy',
+ 'link': 'https://www.grupounis.com',
+ 'positionID': 96,
+ 'title': 'Mac automator web scraping - Grupo Unis'}
+2019-07-31 11:32:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=FlJBXZqnFomgtQWQzquQDw&start=90>
+{'keywords': 'scrapy',
+ 'link': 'https://www.rdwa.fr',
+ 'positionID': 97,
+ 'title': 'Coton_Tige 012 / Spéciale Summer - Rdwa'}
+2019-07-31 11:32:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=FlJBXZqnFomgtQWQzquQDw&start=90>
+{'keywords': 'scrapy',
+ 'link': 'https://zhuanlan.zhihu.com',
+ 'positionID': 98,
+ 'title': 'Scrapy笔记08- 文件与图片- 知乎'}
+2019-07-31 11:32:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=FlJBXZqnFomgtQWQzquQDw&start=90>
+{'keywords': 'scrapy',
+ 'link': 'https://sotogrande-news.com',
+ 'positionID': 99,
+ 'title': 'Web scraper video tutorial'}
+2019-07-31 11:32:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=GlJBXZfoDsSIrwSWjbK4Aw&start=1100> (referer: https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=FlJBXZqnFomgtQWQzquQDw&start=90)
+2019-07-31 11:32:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=scrapy&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwiovpC6397jAhWSp4sKHcCgBJE4zAg110> (referer: https://www.google.com.ua/search?q=scrapy&ie=UTF-8&ei=GlJBXZfoDsSIrwSWjbK4Aw&start=1100)
+2019-07-31 11:32:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwiovpC6397jAhWSp4sKHcCgBJE4zAg110>
+{'keywords': 'scrapy',
+ 'link': 'https://scrapy.org',
+ 'positionID': 100,
+ 'title': 'Scrapy | A Fast and Powerful Scraping and Web Crawling Framework'}
+2019-07-31 11:32:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwiovpC6397jAhWSp4sKHcCgBJE4zAg110>
+{'keywords': 'scrapy',
+ 'link': 'https://docs.scrapy.org',
+ 'positionID': 101,
+ 'title': 'Scrapy 1.7 documentation — Scrapy 1.7.2 documentation'}
+2019-07-31 11:32:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwiovpC6397jAhWSp4sKHcCgBJE4zAg110>
+{'keywords': 'scrapy',
+ 'link': 'https://habr.com',
+ 'positionID': 102,
+ 'title': 'Scrapy: собираем данные и сохраняем в базу данных / Хабр - Habr'}
+2019-07-31 11:32:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwiovpC6397jAhWSp4sKHcCgBJE4zAg110>
+{'keywords': 'scrapy',
+ 'link': 'https://codeguida.com',
+ 'positionID': 103,
+ 'title': 'Створення веб павука з Python та Scrapy - Codeguida'}
+2019-07-31 11:32:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwiovpC6397jAhWSp4sKHcCgBJE4zAg110>
+{'keywords': 'scrapy',
+ 'link': 'https://en.wikipedia.org',
+ 'positionID': 104,
+ 'title': 'Scrapy - Wikipedia'}
+2019-07-31 11:32:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwiovpC6397jAhWSp4sKHcCgBJE4zAg110>
+{'keywords': 'scrapy',
+ 'link': 'https://www.youtube.com',
+ 'positionID': 105,
+ 'title': 'Scrapy: создаём краулер парсер на Python с нуля [GeekBrains ...'}
+2019-07-31 11:32:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwiovpC6397jAhWSp4sKHcCgBJE4zAg110>
+{'keywords': 'scrapy',
+ 'link': 'https://github.com',
+ 'positionID': 106,
+ 'title': 'scrapy/scrapy: Scrapy, a fast high-level web crawling ... - GitHub'}
+2019-07-31 11:32:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwiovpC6397jAhWSp4sKHcCgBJE4zAg110>
+{'keywords': 'scrapy',
+ 'link': 'https://www.datacamp.com',
+ 'positionID': 107,
+ 'title': 'Making Web Crawlers Using Scrapy for Python (article) - DataCamp'}
+2019-07-31 11:32:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwiovpC6397jAhWSp4sKHcCgBJE4zAg110>
+{'keywords': 'scrapy',
+ 'link': 'https://www.8host.com',
+ 'positionID': 108,
+ 'title': 'Web scraping с помощью Scrapy и Python 3 | www.8host.com'}
+2019-07-31 11:32:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwiovpC6397jAhWSp4sKHcCgBJE4zAg110>
+{'keywords': 'scrapy',
+ 'link': 'https://www.accordbox.com',
+ 'positionID': 109,
+ 'title': 'Scrapy Tutorial #5: How To Create Simple Scrapy Spider | AccordBox'}
+2019-07-31 11:32:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=scrapy&ie=UTF-8&tbs=li:1&ei=IVJBXZLAE8StrgSqhLyIAQ&start=120> (referer: https://www.google.com.ua/search?q=scrapy&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwiovpC6397jAhWSp4sKHcCgBJE4zAg110)
+2019-07-31 11:32:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=scrapy&ie=UTF-8&tbs=li:1&ei=JFJBXYTOM8P0tAXb9ZbIDg&start=1130> (referer: https://www.google.com.ua/search?q=scrapy&ie=UTF-8&tbs=li:1&ei=IVJBXZLAE8StrgSqhLyIAQ&start=120)
+2019-07-31 11:32:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=scrapy&ie=UTF-8&tbas=0&source=lnt&sa=X&ved=0ahUKEwiGx5m_397jAhUKAxAIHeqeDo446gg140> (referer: https://www.google.com.ua/search?q=scrapy&ie=UTF-8&tbs=li:1&ei=JFJBXYTOM8P0tAXb9ZbIDg&start=1130)
+2019-07-31 11:32:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&tbas=0&source=lnt&sa=X&ved=0ahUKEwiGx5m_397jAhUKAxAIHeqeDo446gg140>
+{'keywords': 'scrapy',
+ 'link': 'https://scrapy.org',
+ 'positionID': 110,
+ 'title': 'Scrapy | A Fast and Powerful Scraping and Web Crawling Framework'}
+2019-07-31 11:32:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&tbas=0&source=lnt&sa=X&ved=0ahUKEwiGx5m_397jAhUKAxAIHeqeDo446gg140>
+{'keywords': 'scrapy',
+ 'link': 'https://docs.scrapy.org',
+ 'positionID': 111,
+ 'title': 'Scrapy 1.7 documentation — Scrapy 1.7.2 documentation'}
+2019-07-31 11:32:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&tbas=0&source=lnt&sa=X&ved=0ahUKEwiGx5m_397jAhUKAxAIHeqeDo446gg140>
+{'keywords': 'scrapy',
+ 'link': 'https://habr.com',
+ 'positionID': 112,
+ 'title': 'Scrapy: собираем данные и сохраняем в базу данных / Хабр - Habr'}
+2019-07-31 11:32:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&tbas=0&source=lnt&sa=X&ved=0ahUKEwiGx5m_397jAhUKAxAIHeqeDo446gg140>
+{'keywords': 'scrapy',
+ 'link': 'https://codeguida.com',
+ 'positionID': 113,
+ 'title': 'Створення веб павука з Python та Scrapy - Codeguida'}
+2019-07-31 11:32:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&tbas=0&source=lnt&sa=X&ved=0ahUKEwiGx5m_397jAhUKAxAIHeqeDo446gg140>
+{'keywords': 'scrapy',
+ 'link': 'https://en.wikipedia.org',
+ 'positionID': 114,
+ 'title': 'Scrapy - Wikipedia'}
+2019-07-31 11:32:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&tbas=0&source=lnt&sa=X&ved=0ahUKEwiGx5m_397jAhUKAxAIHeqeDo446gg140>
+{'keywords': 'scrapy',
+ 'link': 'https://github.com',
+ 'positionID': 115,
+ 'title': 'scrapy/scrapy: Scrapy, a fast high-level web crawling ... - GitHub'}
+2019-07-31 11:32:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&tbas=0&source=lnt&sa=X&ved=0ahUKEwiGx5m_397jAhUKAxAIHeqeDo446gg140>
+{'keywords': 'scrapy',
+ 'link': 'https://www.8host.com',
+ 'positionID': 116,
+ 'title': 'Web scraping с помощью Scrapy и Python 3 | www.8host.com'}
+2019-07-31 11:32:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&tbas=0&source=lnt&sa=X&ved=0ahUKEwiGx5m_397jAhUKAxAIHeqeDo446gg140>
+{'keywords': 'scrapy',
+ 'link': 'https://www.youtube.com',
+ 'positionID': 117,
+ 'title': 'Scrapy: создаём краулер парсер на Python с нуля [GeekBrains ...'}
+2019-07-31 11:32:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&tbas=0&source=lnt&sa=X&ved=0ahUKEwiGx5m_397jAhUKAxAIHeqeDo446gg140>
+{'keywords': 'scrapy',
+ 'link': 'https://www.datacamp.com',
+ 'positionID': 118,
+ 'title': 'Making Web Crawlers Using Scrapy for Python (article) - DataCamp'}
+2019-07-31 11:32:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&ie=UTF-8&tbas=0&source=lnt&sa=X&ved=0ahUKEwiGx5m_397jAhUKAxAIHeqeDo446gg140>
+{'keywords': 'scrapy',
+ 'link': 'https://towardsdatascience.com',
+ 'positionID': 119,
+ 'title': 'How to Scrape the Web using Python with ScraPy Spiders'}
+2019-07-31 11:32:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&ei=LFJBXc5ah7K1BerYn_AK&start=150> (referer: https://www.google.com.ua/search?q=scrapy&ie=UTF-8&tbas=0&source=lnt&sa=X&ved=0ahUKEwiGx5m_397jAhUKAxAIHeqeDo446gg140)
+2019-07-31 11:32:51 [scrapy.extensions.logstats] INFO: Crawled 16 pages (at 16 pages/min), scraped 119 items (at 119 items/min)
+2019-07-31 11:32:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&ei=L1JBXYC2LMrwtAXt1IHAAw&start=1160> (referer: https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&ei=LFJBXc5ah7K1BerYn_AK&start=150)
+2019-07-31 11:32:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwiR-bXE397jAhUIOK0KHVLMBiU4iAk170> (referer: https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&ei=L1JBXYC2LMrwtAXt1IHAAw&start=1160)
+2019-07-31 11:32:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwiR-bXE397jAhUIOK0KHVLMBiU4iAk170>
+{'keywords': 'scrapy',
+ 'link': 'https://scrapy.org',
+ 'positionID': 120,
+ 'title': 'Scrapy | A Fast and Powerful Scraping and Web Crawling Framework'}
+2019-07-31 11:32:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwiR-bXE397jAhUIOK0KHVLMBiU4iAk170>
+{'keywords': 'scrapy',
+ 'link': 'https://docs.scrapy.org',
+ 'positionID': 121,
+ 'title': 'Scrapy 1.7 documentation — Scrapy 1.7.2 documentation'}
+2019-07-31 11:32:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwiR-bXE397jAhUIOK0KHVLMBiU4iAk170>
+{'keywords': 'scrapy',
+ 'link': 'https://habr.com',
+ 'positionID': 122,
+ 'title': 'Scrapy: собираем данные и сохраняем в базу данных / Хабр - Habr'}
+2019-07-31 11:32:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwiR-bXE397jAhUIOK0KHVLMBiU4iAk170>
+{'keywords': 'scrapy',
+ 'link': 'https://codeguida.com',
+ 'positionID': 123,
+ 'title': 'Створення веб павука з Python та Scrapy - Codeguida'}
+2019-07-31 11:32:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwiR-bXE397jAhUIOK0KHVLMBiU4iAk170>
+{'keywords': 'scrapy',
+ 'link': 'https://en.wikipedia.org',
+ 'positionID': 124,
+ 'title': 'Scrapy - Wikipedia'}
+2019-07-31 11:32:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwiR-bXE397jAhUIOK0KHVLMBiU4iAk170>
+{'keywords': 'scrapy',
+ 'link': 'https://www.youtube.com',
+ 'positionID': 125,
+ 'title': 'Scrapy: создаём краулер парсер на Python с нуля [GeekBrains ...'}
+2019-07-31 11:32:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwiR-bXE397jAhUIOK0KHVLMBiU4iAk170>
+{'keywords': 'scrapy',
+ 'link': 'https://github.com',
+ 'positionID': 126,
+ 'title': 'scrapy/scrapy: Scrapy, a fast high-level web crawling ... - GitHub'}
+2019-07-31 11:32:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwiR-bXE397jAhUIOK0KHVLMBiU4iAk170>
+{'keywords': 'scrapy',
+ 'link': 'https://www.8host.com',
+ 'positionID': 127,
+ 'title': 'Web scraping с помощью Scrapy и Python 3 | www.8host.com'}
+2019-07-31 11:32:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwiR-bXE397jAhUIOK0KHVLMBiU4iAk170>
+{'keywords': 'scrapy',
+ 'link': 'https://www.datacamp.com',
+ 'positionID': 128,
+ 'title': 'Making Web Crawlers Using Scrapy for Python (article) - DataCamp'}
+2019-07-31 11:32:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwiR-bXE397jAhUIOK0KHVLMBiU4iAk170>
+{'keywords': 'scrapy',
+ 'link': 'https://www.digitalocean.com',
+ 'positionID': 129,
+ 'title': 'Crawling and Scraping Web Pages with Scrapy and Python 3 ...'}
+2019-07-31 11:32:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&tbs=li:1&ei=N1JBXe3WAcK0tQXO05WQBA&start=180> (referer: https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwiR-bXE397jAhUIOK0KHVLMBiU4iAk170)
+2019-07-31 11:33:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&tbs=li:1&ei=OlJBXfOrJcLStAWTjZWQBA&start=1190> (referer: https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&tbs=li:1&ei=N1JBXe3WAcK0tQXO05WQBA&start=180)
+2019-07-31 11:33:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&tbas=0&source=lnt&sa=X&ved=0ahUKEwimpsPJ397jAhVHLKwKHcqsAH04pgk200> (referer: https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&tbs=li:1&ei=OlJBXfOrJcLStAWTjZWQBA&start=1190)
+2019-07-31 11:33:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&tbas=0&source=lnt&sa=X&ved=0ahUKEwimpsPJ397jAhVHLKwKHcqsAH04pgk200>
+{'keywords': 'scrapy',
+ 'link': 'https://scrapy.org',
+ 'positionID': 130,
+ 'title': 'Scrapy | A Fast and Powerful Scraping and Web Crawling Framework'}
+2019-07-31 11:33:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&tbas=0&source=lnt&sa=X&ved=0ahUKEwimpsPJ397jAhVHLKwKHcqsAH04pgk200>
+{'keywords': 'scrapy',
+ 'link': 'https://docs.scrapy.org',
+ 'positionID': 131,
+ 'title': 'Scrapy 1.7 documentation — Scrapy 1.7.2 documentation'}
+2019-07-31 11:33:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&tbas=0&source=lnt&sa=X&ved=0ahUKEwimpsPJ397jAhVHLKwKHcqsAH04pgk200>
+{'keywords': 'scrapy',
+ 'link': 'https://habr.com',
+ 'positionID': 132,
+ 'title': 'Scrapy: собираем данные и сохраняем в базу данных / Хабр - Habr'}
+2019-07-31 11:33:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&tbas=0&source=lnt&sa=X&ved=0ahUKEwimpsPJ397jAhVHLKwKHcqsAH04pgk200>
+{'keywords': 'scrapy',
+ 'link': 'https://codeguida.com',
+ 'positionID': 133,
+ 'title': 'Створення веб павука з Python та Scrapy - Codeguida'}
+2019-07-31 11:33:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&tbas=0&source=lnt&sa=X&ved=0ahUKEwimpsPJ397jAhVHLKwKHcqsAH04pgk200>
+{'keywords': 'scrapy',
+ 'link': 'https://en.wikipedia.org',
+ 'positionID': 134,
+ 'title': 'Scrapy - Wikipedia'}
+2019-07-31 11:33:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&tbas=0&source=lnt&sa=X&ved=0ahUKEwimpsPJ397jAhVHLKwKHcqsAH04pgk200>
+{'keywords': 'scrapy',
+ 'link': 'https://github.com',
+ 'positionID': 135,
+ 'title': 'scrapy/scrapy: Scrapy, a fast high-level web crawling ... - GitHub'}
+2019-07-31 11:33:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&tbas=0&source=lnt&sa=X&ved=0ahUKEwimpsPJ397jAhVHLKwKHcqsAH04pgk200>
+{'keywords': 'scrapy',
+ 'link': 'https://www.datacamp.com',
+ 'positionID': 136,
+ 'title': 'Making Web Crawlers Using Scrapy for Python (article) - DataCamp'}
+2019-07-31 11:33:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&tbas=0&source=lnt&sa=X&ved=0ahUKEwimpsPJ397jAhVHLKwKHcqsAH04pgk200>
+{'keywords': 'scrapy',
+ 'link': 'https://www.youtube.com',
+ 'positionID': 137,
+ 'title': 'Scrapy: создаём краулер парсер на Python с нуля [GeekBrains ...'}
+2019-07-31 11:33:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&tbas=0&source=lnt&sa=X&ved=0ahUKEwimpsPJ397jAhVHLKwKHcqsAH04pgk200>
+{'keywords': 'scrapy',
+ 'link': 'https://www.8host.com',
+ 'positionID': 138,
+ 'title': 'Web scraping с помощью Scrapy и Python 3 | www.8host.com'}
+2019-07-31 11:33:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&tbas=0&source=lnt&sa=X&ved=0ahUKEwimpsPJ397jAhVHLKwKHcqsAH04pgk200>
+{'keywords': 'scrapy',
+ 'link': 'https://towardsdatascience.com',
+ 'positionID': 139,
+ 'title': 'How to Scrape the Web using Python with ScraPy Spiders'}
+2019-07-31 11:33:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&ei=QVJBXbi5KseGrwSRt76gAQ&start=210> (referer: https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&tbas=0&source=lnt&sa=X&ved=0ahUKEwimpsPJ397jAhVHLKwKHcqsAH04pgk200)
+2019-07-31 11:33:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&ei=RVJBXYzWCqjLrgSU6aHIBA&start=2220> (referer: https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&ei=QVJBXbi5KseGrwSRt76gAQ&start=210)
+2019-07-31 11:33:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwj0nNLO397jAhWjl4sKHepFCOc4rBE230> (referer: https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&ei=RVJBXYzWCqjLrgSU6aHIBA&start=2220)
+2019-07-31 11:33:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwj0nNLO397jAhWjl4sKHepFCOc4rBE230>
+{'keywords': 'scrapy',
+ 'link': 'https://scrapy.org',
+ 'positionID': 140,
+ 'title': 'Scrapy | A Fast and Powerful Scraping and Web Crawling Framework'}
+2019-07-31 11:33:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwj0nNLO397jAhWjl4sKHepFCOc4rBE230>
+{'keywords': 'scrapy',
+ 'link': 'https://docs.scrapy.org',
+ 'positionID': 141,
+ 'title': 'Scrapy 1.7 documentation — Scrapy 1.7.2 documentation'}
+2019-07-31 11:33:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwj0nNLO397jAhWjl4sKHepFCOc4rBE230>
+{'keywords': 'scrapy',
+ 'link': 'https://habr.com',
+ 'positionID': 142,
+ 'title': 'Scrapy: собираем данные и сохраняем в базу данных / Хабр - Habr'}
+2019-07-31 11:33:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwj0nNLO397jAhWjl4sKHepFCOc4rBE230>
+{'keywords': 'scrapy',
+ 'link': 'https://codeguida.com',
+ 'positionID': 143,
+ 'title': 'Створення веб павука з Python та Scrapy - Codeguida'}
+2019-07-31 11:33:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwj0nNLO397jAhWjl4sKHepFCOc4rBE230>
+{'keywords': 'scrapy',
+ 'link': 'https://en.wikipedia.org',
+ 'positionID': 144,
+ 'title': 'Scrapy - Wikipedia'}
+2019-07-31 11:33:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwj0nNLO397jAhWjl4sKHepFCOc4rBE230>
+{'keywords': 'scrapy',
+ 'link': 'https://www.youtube.com',
+ 'positionID': 145,
+ 'title': 'Scrapy: создаём краулер парсер на Python с нуля [GeekBrains ...'}
+2019-07-31 11:33:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwj0nNLO397jAhWjl4sKHepFCOc4rBE230>
+{'keywords': 'scrapy',
+ 'link': 'https://github.com',
+ 'positionID': 146,
+ 'title': 'scrapy/scrapy: Scrapy, a fast high-level web crawling ... - GitHub'}
+2019-07-31 11:33:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwj0nNLO397jAhWjl4sKHepFCOc4rBE230>
+{'keywords': 'scrapy',
+ 'link': 'https://www.datacamp.com',
+ 'positionID': 147,
+ 'title': 'Making Web Crawlers Using Scrapy for Python (article) - DataCamp'}
+2019-07-31 11:33:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwj0nNLO397jAhWjl4sKHepFCOc4rBE230>
+{'keywords': 'scrapy',
+ 'link': 'https://www.8host.com',
+ 'positionID': 148,
+ 'title': 'Web scraping с помощью Scrapy и Python 3 | www.8host.com'}
+2019-07-31 11:33:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwj0nNLO397jAhWjl4sKHepFCOc4rBE230>
+{'keywords': 'scrapy',
+ 'link': 'https://www.accordbox.com',
+ 'positionID': 149,
+ 'title': 'Scrapy Tutorial #5: How To Create Simple Scrapy Spider | AccordBox'}
+2019-07-31 11:33:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&tbs=li:1&ei=TFJBXff7FLLMrgSvqLKwBA&start=240> (referer: https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&source=lnt&tbs=li:1&sa=X&ved=0ahUKEwj0nNLO397jAhWjl4sKHepFCOc4rBE230)
+2019-07-31 11:33:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&tbs=li:1&ei=T1JBXfaVL4qOrwTj4ob4AQ&start=2250> (referer: https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&tbs=li:1&ei=TFJBXff7FLLMrgSvqLKwBA&start=240)
+2019-07-31 11:33:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&tbas=0&source=lnt&sa=X&ved=0ahUKEwjilMjT397jAhULpYsKHevkD5g4yhE260> (referer: https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&tbs=li:1&ei=T1JBXfaVL4qOrwTj4ob4AQ&start=2250)
+2019-07-31 11:33:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=scrapy&tbas=0&ie=UTF-8&tbas=0&source=lnt&sa=X&ved=0ahUKEwjilMjT397jAhULpYsKHevkD5g4yhE260>
+{'keywords': 'scrapy',
+ 'link': 'https://scrapy.org',
+ 'positionID': 150,
+ 'title': 'Scrapy | A Fast and Powerful Scraping and Web Crawling Framework'}
+2019-07-31 11:33:30 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-07-31 11:33:30 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 10091,
+ 'downloader/request_count': 27,
+ 'downloader/request_method_count/GET': 27,
+ 'downloader/response_bytes': 379891,
+ 'downloader/response_count': 27,
+ 'downloader/response_status_count/200': 27,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 7, 31, 8, 33, 30, 40679),
+ 'item_scraped_count': 150,
+ 'log_count/DEBUG': 177,
+ 'log_count/INFO': 10,
+ 'memusage/max': 75005952,
+ 'memusage/startup': 69050368,
+ 'request_depth_max': 26,
+ 'response_received_count': 27,
+ 'scheduler/dequeued': 27,
+ 'scheduler/dequeued/memory': 27,
+ 'scheduler/enqueued': 27,
+ 'scheduler/enqueued/memory': 27,
+ 'start_time': datetime.datetime(2019, 7, 31, 8, 31, 51, 701975)}
+2019-07-31 11:33:30 [scrapy.core.engine] INFO: Spider closed (finished)

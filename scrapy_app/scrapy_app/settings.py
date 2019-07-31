@@ -27,7 +27,7 @@ NEWSPIDER_MODULE = 'scrapy_app.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-# USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+USER_AGENT = 'Chrome/61.0.3163.79'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -57,15 +57,15 @@ COOKIES_ENABLED = False
 
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
-#SPIDER_MIDDLEWARES = {
+# SPIDER_MIDDLEWARES = {
 #    'scrapy_app.middlewares.ScrapyAppSpiderMiddleware': 543,
-#}
+# }
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
+# DOWNLOADER_MIDDLEWARES = {
 #    'scrapy_app.middlewares.ScrapyAppDownloaderMiddleware': 543,
-#}
+# }
 
 # Enable or disable extensions
 # See https://doc.scrapy.org/en/latest/topics/extensions.html

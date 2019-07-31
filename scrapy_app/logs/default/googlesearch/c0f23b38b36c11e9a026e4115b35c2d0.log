@@ -1,0 +1,229 @@
+2019-07-31 11:25:31 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: scrapy_app)
+2019-07-31 11:25:31 [scrapy.utils.log] INFO: Versions: lxml 4.3.4.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.1, Python 3.6.8 (default, Jan 14 2019, 11:02:34) - [GCC 8.0.1 20180414 (experimental) [trunk revision 259383]], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.7, Platform Linux-4.18.0-25-generic-x86_64-with-Ubuntu-18.04-bionic
+2019-07-31 11:25:31 [scrapy.crawler] INFO: Overridden settings: {'AUTOTHROTTLE_ENABLED': True, 'AUTOTHROTTLE_START_DELAY': 3, 'BOT_NAME': 'scrapy_app', 'COOKIES_ENABLED': False, 'LOG_FILE': 'logs/default/googlesearch/c0f23b38b36c11e9a026e4115b35c2d0.log', 'NEWSPIDER_MODULE': 'scrapy_app.spiders', 'SPIDER_MODULES': ['scrapy_app.spiders'], 'USER_AGENT': 'Chrome/61.0.3163.79'}
+2019-07-31 11:25:31 [scrapy.extensions.telnet] INFO: Telnet Password: ceab1fc2de22cc5e
+2019-07-31 11:25:31 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2019-07-31 11:25:31 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-07-31 11:25:31 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-07-31 11:25:31 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_app.pipelines.ScrapyAppPipeline']
+2019-07-31 11:25:31 [scrapy.core.engine] INFO: Spider opened
+2019-07-31 11:25:31 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-07-31 11:25:31 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-07-31 11:25:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=lviv> (referer: None)
+2019-07-31 11:25:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv>
+{'keywords': 'lviv',
+ 'link': 'https://uk.wikipedia.org',
+ 'positionID': 1,
+ 'title': 'Львів — Вікіпедія'}
+2019-07-31 11:25:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv>
+{'keywords': 'lviv',
+ 'link': 'https://en.wikipedia.org',
+ 'positionID': 2,
+ 'title': 'Lviv - Wikipedia'}
+2019-07-31 11:25:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv>
+{'keywords': 'lviv',
+ 'link': 'https://lviv.travel',
+ 'positionID': 3,
+ 'title': 'Lviv Travel'}
+2019-07-31 11:25:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv>
+{'keywords': 'lviv',
+ 'link': 'https://lviv.travel',
+ 'positionID': 4,
+ 'title': 'Lviv open to the World'}
+2019-07-31 11:25:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv>
+{'keywords': 'lviv',
+ 'link': 'https://www.justlviv.it',
+ 'positionID': 5,
+ 'title': 'Just Lviv it!- Твій львівський гід. Оригінальні тематичні екскурсії'}
+2019-07-31 11:25:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv>
+{'keywords': 'lviv',
+ 'link': 'https://www.lviv.ua',
+ 'positionID': 6,
+ 'title': 'Lviv.ua magazine'}
+2019-07-31 11:25:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv>
+{'keywords': 'lviv',
+ 'link': 'https://lviv.com',
+ 'positionID': 7,
+ 'title': 'LVIV.COM: Твій МедіаБро'}
+2019-07-31 11:25:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv>
+{'keywords': 'lviv',
+ 'link': 'https://zik.ua',
+ 'positionID': 8,
+ 'title': 'Новини Львів - ZIK.UA'}
+2019-07-31 11:25:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv>
+{'keywords': 'lviv',
+ 'link': 'https://www.facebook.com',
+ 'positionID': 9,
+ 'title': 'Lviv.Travel - Home | Facebook'}
+2019-07-31 11:25:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv>
+{'keywords': 'lviv',
+ 'link': 'https://www.skyscrapercity.com',
+ 'positionID': 10,
+ 'title': 'Львів / Lviv - SkyscraperCity'}
+2019-07-31 11:25:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=lviv&ie=UTF-8&ei=fFBBXbeoKI68sAWJmY3QBg&start=10> (referer: https://www.google.com.ua/search?q=lviv)
+2019-07-31 11:25:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv&ie=UTF-8&ei=fFBBXbeoKI68sAWJmY3QBg&start=10>
+{'keywords': 'lviv',
+ 'link': 'https://city-adm.lviv.ua',
+ 'positionID': 11,
+ 'title': 'Львівська міська рада'}
+2019-07-31 11:25:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv&ie=UTF-8&ei=fFBBXbeoKI68sAWJmY3QBg&start=10>
+{'keywords': 'lviv',
+ 'link': 'https://lwo.aero',
+ 'positionID': 12,
+ 'title': '̳Міжнародний аеропорт «Львів» імені Данила Галицького'}
+2019-07-31 11:25:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv&ie=UTF-8&ei=fFBBXbeoKI68sAWJmY3QBg&start=10>
+{'keywords': 'lviv',
+ 'link': 'https://www.work.ua',
+ 'positionID': 13,
+ 'title': 'Робота у Львові. Вакансії у Львові — Work.ua'}
+2019-07-31 11:25:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv&ie=UTF-8&ei=fFBBXbeoKI68sAWJmY3QBg&start=10>
+{'keywords': 'lviv',
+ 'link': 'https://www.lviv-info.com',
+ 'positionID': 14,
+ 'title': 'Львів 2019.Готелі,визначні місця,фотогалереї'}
+2019-07-31 11:25:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv&ie=UTF-8&ei=fFBBXbeoKI68sAWJmY3QBg&start=10>
+{'keywords': 'lviv',
+ 'link': 'https://osnovypublishing.com',
+ 'positionID': 15,
+ 'title': 'Awesome Lviv - Видавництво Основи'}
+2019-07-31 11:25:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv&ie=UTF-8&ei=fFBBXbeoKI68sAWJmY3QBg&start=10>
+{'keywords': 'lviv',
+ 'link': 'https://www.oldcityhostel.lviv.ua',
+ 'positionID': 16,
+ 'title': 'Найкращий хостел Львова - Old City Hostel, Львів, Україна'}
+2019-07-31 11:25:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv&ie=UTF-8&ei=fFBBXbeoKI68sAWJmY3QBg&start=10>
+{'keywords': 'lviv',
+ 'link': 'https://www.hotel-lviv.com.ua',
+ 'positionID': 17,
+ 'title': 'Готель "Львів"'}
+2019-07-31 11:25:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv&ie=UTF-8&ei=fFBBXbeoKI68sAWJmY3QBg&start=10>
+{'keywords': 'lviv',
+ 'link': 'https://www.accuweather.com',
+ 'positionID': 18,
+ 'title': "Lviv Weather - AccuWeather Forecast for L'viv Ukraine"}
+2019-07-31 11:25:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv&ie=UTF-8&ei=fFBBXbeoKI68sAWJmY3QBg&start=10>
+{'keywords': 'lviv',
+ 'link': 'https://prjctr.com.ua',
+ 'positionID': 19,
+ 'title': 'Львів - Projector'}
+2019-07-31 11:25:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv&ie=UTF-8&ei=fFBBXbeoKI68sAWJmY3QBg&start=10>
+{'keywords': 'lviv',
+ 'link': 'https://ot-ot.lviv.ua',
+ 'positionID': 20,
+ 'title': 'Ot-Ot.lviv.ua — найповніший календар подій Львова!'}
+2019-07-31 11:25:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=lviv&ie=UTF-8&ei=gFBBXYvVJ46wtQXf6KXYCA&start=20> (referer: https://www.google.com.ua/search?q=lviv&ie=UTF-8&ei=fFBBXbeoKI68sAWJmY3QBg&start=10)
+2019-07-31 11:25:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv&ie=UTF-8&ei=gFBBXYvVJ46wtQXf6KXYCA&start=20>
+{'keywords': 'lviv',
+ 'link': 'https://opera.lviv.ua',
+ 'positionID': 21,
+ 'title': 'Calendar - Lviv National Academic Opera and Ballet Theater'}
+2019-07-31 11:25:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv&ie=UTF-8&ei=gFBBXYvVJ46wtQXf6KXYCA&start=20>
+{'keywords': 'lviv',
+ 'link': 'https://www.fclviv.com.ua',
+ 'positionID': 22,
+ 'title': 'ФК Львів'}
+2019-07-31 11:25:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv&ie=UTF-8&ei=gFBBXYvVJ46wtQXf6KXYCA&start=20>
+{'keywords': 'lviv',
+ 'link': 'https://www.booking.com',
+ 'positionID': 23,
+ 'title': '30 Best Lviv Hotels, Ukraine (From $5) - Booking.com'}
+2019-07-31 11:25:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv&ie=UTF-8&ei=gFBBXYvVJ46wtQXf6KXYCA&start=20>
+{'keywords': 'lviv',
+ 'link': 'https://www.lp.edu.ua',
+ 'positionID': 24,
+ 'title': 'Lviv Polytechnic National University'}
+2019-07-31 11:25:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv&ie=UTF-8&ei=gFBBXYvVJ46wtQXf6KXYCA&start=20>
+{'keywords': 'lviv',
+ 'link': 'https://novostroyki.lun.ua',
+ 'positionID': 25,
+ 'title': 'ЖК Greenville Park Lviv, Львів — Квартири в новобудовах — ЛУН'}
+2019-07-31 11:25:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv&ie=UTF-8&ei=gFBBXYvVJ46wtQXf6KXYCA&start=20>
+{'keywords': 'lviv',
+ 'link': 'https://lvivmediaforum.com',
+ 'positionID': 26,
+ 'title': 'Lviv Media Forum'}
+2019-07-31 11:25:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv&ie=UTF-8&ei=gFBBXYvVJ46wtQXf6KXYCA&start=20>
+{'keywords': 'lviv',
+ 'link': 'https://pfclviv.com',
+ 'positionID': 27,
+ 'title': 'ФК «Львів'}
+2019-07-31 11:25:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv&ie=UTF-8&ei=gFBBXYvVJ46wtQXf6KXYCA&start=20>
+{'keywords': 'lviv',
+ 'link': 'https://www.banklviv.com',
+ 'positionID': 28,
+ 'title': 'Головна - АТ АКБ "Банк Львів" - надійно, вигідно, зручно'}
+2019-07-31 11:25:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv&ie=UTF-8&ei=gFBBXYvVJ46wtQXf6KXYCA&start=20>
+{'keywords': 'lviv',
+ 'link': 'https://www.eway.in.ua',
+ 'positionID': 29,
+ 'title': 'Львів - EasyWay'}
+2019-07-31 11:25:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv&ie=UTF-8&ei=gFBBXYvVJ46wtQXf6KXYCA&start=20>
+{'keywords': 'lviv',
+ 'link': 'https://cityofliterature.lviv.ua',
+ 'positionID': 30,
+ 'title': 'Lviv City of Literature'}
+2019-07-31 11:25:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=lviv&ie=UTF-8&ei=hFBBXarYJsjetQXs66DgAw&start=30> (referer: https://www.google.com.ua/search?q=lviv&ie=UTF-8&ei=gFBBXYvVJ46wtQXf6KXYCA&start=20)
+2019-07-31 11:25:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv&ie=UTF-8&ei=hFBBXarYJsjetQXs66DgAw&start=30>
+{'keywords': 'lviv',
+ 'link': 'https://itcluster.lviv.ua',
+ 'positionID': 31,
+ 'title': 'Lviv IT Cluster: Головна'}
+2019-07-31 11:25:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv&ie=UTF-8&ei=hFBBXarYJsjetQXs66DgAw&start=30>
+{'keywords': 'lviv',
+ 'link': 'https://planetakino.ua',
+ 'positionID': 32,
+ 'title': 'Расписание сеансов: Планета Кино 4DX в Львове (FORUM LVIV)'}
+2019-07-31 11:25:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv&ie=UTF-8&ei=hFBBXarYJsjetQXs66DgAw&start=30>
+{'keywords': 'lviv',
+ 'link': 'https://city-service.lviv.ua',
+ 'positionID': 33,
+ 'title': 'Центр міського сервісу | Львів'}
+2019-07-31 11:25:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=lviv&ie=UTF-8&ei=hFBBXarYJsjetQXs66DgAw&start=30>
+{'keywords': 'lviv',
+ 'link': 'https://www.gismeteo.ua',
+ 'positionID': 34,
+ 'title': 'Львів - Gismeteo'}
+2019-07-31 11:25:48 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-07-31 11:25:48 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1226,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 99175,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 4,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 7, 31, 8, 25, 48, 463659),
+ 'item_scraped_count': 34,
+ 'log_count/DEBUG': 38,
+ 'log_count/INFO': 9,
+ 'memusage/max': 69070848,
+ 'memusage/startup': 69070848,
+ 'request_depth_max': 3,
+ 'response_received_count': 4,
+ 'scheduler/dequeued': 4,
+ 'scheduler/dequeued/memory': 4,
+ 'scheduler/enqueued': 4,
+ 'scheduler/enqueued/memory': 4,
+ 'start_time': datetime.datetime(2019, 7, 31, 8, 25, 31, 757942)}
+2019-07-31 11:25:48 [scrapy.core.engine] INFO: Spider closed (finished)

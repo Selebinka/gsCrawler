@@ -1,0 +1,286 @@
+2019-07-31 11:31:01 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: scrapy_app)
+2019-07-31 11:31:01 [scrapy.utils.log] INFO: Versions: lxml 4.3.4.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.1, Python 3.6.8 (default, Jan 14 2019, 11:02:34) - [GCC 8.0.1 20180414 (experimental) [trunk revision 259383]], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.7, Platform Linux-4.18.0-25-generic-x86_64-with-Ubuntu-18.04-bionic
+2019-07-31 11:31:01 [scrapy.crawler] INFO: Overridden settings: {'AUTOTHROTTLE_ENABLED': True, 'AUTOTHROTTLE_START_DELAY': 3, 'BOT_NAME': 'scrapy_app', 'COOKIES_ENABLED': False, 'LOG_FILE': 'logs/default/googlesearch/84f74b22b36d11e9a026e4115b35c2d0.log', 'NEWSPIDER_MODULE': 'scrapy_app.spiders', 'SPIDER_MODULES': ['scrapy_app.spiders'], 'USER_AGENT': 'Chrome/61.0.3163.79'}
+2019-07-31 11:31:01 [scrapy.extensions.telnet] INFO: Telnet Password: 44745dadb8c50648
+2019-07-31 11:31:01 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2019-07-31 11:31:01 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-07-31 11:31:01 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-07-31 11:31:01 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_app.pipelines.ScrapyAppPipeline']
+2019-07-31 11:31:01 [scrapy.core.engine] INFO: Spider opened
+2019-07-31 11:31:01 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-07-31 11:31:01 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-07-31 11:31:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=workout> (referer: None)
+2019-07-31 11:31:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout>
+{'keywords': 'workout',
+ 'link': 'https://uk.wikipedia.org',
+ 'positionID': 1,
+ 'title': 'Street workout — Вікіпедія'}
+2019-07-31 11:31:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout>
+{'keywords': 'workout',
+ 'link': 'https://ru.wikipedia.org',
+ 'positionID': 2,
+ 'title': 'Воркаут — Википедия'}
+2019-07-31 11:31:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout>
+{'keywords': 'workout',
+ 'link': 'https://workout.su',
+ 'positionID': 3,
+ 'title': 'WorkOut: фитнес городских улиц'}
+2019-07-31 11:31:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout>
+{'keywords': 'workout',
+ 'link': 'https://www.youtube.com',
+ 'positionID': 4,
+ 'title': 'Workout - Будь в форме! - YouTube'}
+2019-07-31 11:31:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout>
+{'keywords': 'workout',
+ 'link': 'https://vk.com',
+ 'positionID': 5,
+ 'title': 'Workout | Будь в форме | ВКонтакте'}
+2019-07-31 11:31:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout>
+{'keywords': 'workout',
+ 'link': 'https://workoutshop.ru',
+ 'positionID': 6,
+ 'title': 'Магазин WORKOUT: Лучшие товары для тренировок'}
+2019-07-31 11:31:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout>
+{'keywords': 'workout',
+ 'link': 'https://www.menshealth.com',
+ 'positionID': 7,
+ 'title': "Workouts – Plans, Exercises and Form Guides - Men's Health"}
+2019-07-31 11:31:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout>
+{'keywords': 'workout',
+ 'link': 'https://www.puregym.com',
+ 'positionID': 8,
+ 'title': 'Gym Workouts | Free Workout Videos | PureGym'}
+2019-07-31 11:31:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout>
+{'keywords': 'workout',
+ 'link': 'https://open.spotify.com',
+ 'positionID': 9,
+ 'title': 'workout'}
+2019-07-31 11:31:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=xVFBXYyAN4SgswWQgZiADw&start=10> (referer: https://www.google.com.ua/search?q=workout)
+2019-07-31 11:31:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=xVFBXYyAN4SgswWQgZiADw&start=10>
+{'keywords': 'workout',
+ 'link': 'https://darebee.com',
+ 'positionID': 10,
+ 'title': 'DAREBEE Workouts'}
+2019-07-31 11:31:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=xVFBXYyAN4SgswWQgZiADw&start=10>
+{'keywords': 'workout',
+ 'link': 'https://www.chicago.gov',
+ 'positionID': 11,
+ 'title': 'Millennium Park Summer Workouts - City of Chicago'}
+2019-07-31 11:31:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=xVFBXYyAN4SgswWQgZiADw&start=10>
+{'keywords': 'workout',
+ 'link': 'https://www.shape.com',
+ 'positionID': 12,
+ 'title': 'Workouts | Shape Magazine'}
+2019-07-31 11:31:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=xVFBXYyAN4SgswWQgZiADw&start=10>
+{'keywords': 'workout',
+ 'link': 'https://fitness-national.com',
+ 'positionID': 13,
+ 'title': 'TBW (Total Body Workout) с тренером в Киеве - Фитнес-клуб на ...'}
+2019-07-31 11:31:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=xVFBXYyAN4SgswWQgZiADw&start=10>
+{'keywords': 'workout',
+ 'link': 'https://www.bbc.com',
+ 'positionID': 14,
+ 'title': 'Culture - What songs make you work out harder? - BBC'}
+2019-07-31 11:31:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=xVFBXYyAN4SgswWQgZiADw&start=10>
+{'keywords': 'workout',
+ 'link': 'https://5element.ua',
+ 'positionID': 15,
+ 'title': 'Workout Gym: тренування і заняття воркаут для початківців | 5 ...'}
+2019-07-31 11:31:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=xVFBXYyAN4SgswWQgZiADw&start=10>
+{'keywords': 'workout',
+ 'link': 'https://www.techradar.com',
+ 'positionID': 16,
+ 'title': 'The best workout apps 2019 | TechRadar'}
+2019-07-31 11:31:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=xVFBXYyAN4SgswWQgZiADw&start=10>
+{'keywords': 'workout',
+ 'link': 'https://www.dickssportinggoods.com',
+ 'positionID': 17,
+ 'title': "Men's Workout Clothes & Gym Clothes | Father's Day 2019 at DICK'S"}
+2019-07-31 11:31:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=xVFBXYyAN4SgswWQgZiADw&start=10>
+{'keywords': 'workout',
+ 'link': 'https://www.muscleandfitness.com',
+ 'positionID': 18,
+ 'title': 'Workouts & Muscle-Building Exercises | Muscle & Fitness'}
+2019-07-31 11:31:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=ylFBXd6cFszGsAX5goGgAg&start=20> (referer: https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=xVFBXYyAN4SgswWQgZiADw&start=10)
+2019-07-31 11:31:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=ylFBXd6cFszGsAX5goGgAg&start=20>
+{'keywords': 'workout',
+ 'link': 'https://www.muscleandfitness.com',
+ 'positionID': 19,
+ 'title': 'Workouts & Muscle-Building Exercises | Muscle & Fitness'}
+2019-07-31 11:31:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=ylFBXd6cFszGsAX5goGgAg&start=20>
+{'keywords': 'workout',
+ 'link': 'https://management30.com',
+ 'positionID': 20,
+ 'title': '#Workout Book by Jurgen Appelo | Management 3.0'}
+2019-07-31 11:31:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=ylFBXd6cFszGsAX5goGgAg&start=20>
+{'keywords': 'workout',
+ 'link': 'https://play.google.com',
+ 'positionID': 21,
+ 'title': 'Home Workout - No Equipment - Apps on Google Play'}
+2019-07-31 11:31:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=ylFBXd6cFszGsAX5goGgAg&start=20>
+{'keywords': 'workout',
+ 'link': 'https://www.medicalnewstoday.com',
+ 'positionID': 22,
+ 'title': 'Masturbation before a workout: Is there any effect?'}
+2019-07-31 11:31:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=ylFBXd6cFszGsAX5goGgAg&start=20>
+{'keywords': 'workout',
+ 'link': 'https://www.nytimes.com',
+ 'positionID': 23,
+ 'title': 'The 9-Minute Strength Workout - Well Guides - The New York Times'}
+2019-07-31 11:31:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=ylFBXd6cFszGsAX5goGgAg&start=20>
+{'keywords': 'workout',
+ 'link': 'https://www.merriam-webster.com',
+ 'positionID': 24,
+ 'title': 'Workout | Definition of Workout by Merriam-Webster'}
+2019-07-31 11:31:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=ylFBXd6cFszGsAX5goGgAg&start=20>
+{'keywords': 'workout',
+ 'link': 'https://www.blogilates.com',
+ 'positionID': 25,
+ 'title': 'Fitness & Workout Videos from Cassey Ho | Blogilates'}
+2019-07-31 11:31:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=ylFBXd6cFszGsAX5goGgAg&start=20>
+{'keywords': 'workout',
+ 'link': 'https://www.self.com',
+ 'positionID': 26,
+ 'title': "Women's Workout Tips, Trends & Advice | SELF"}
+2019-07-31 11:31:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=ylFBXd6cFszGsAX5goGgAg&start=20>
+{'keywords': 'workout',
+ 'link': 'https://danalinnbailey.com',
+ 'positionID': 27,
+ 'title': "DLB Today's Workout - Dana Linn Bailey"}
+2019-07-31 11:31:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=ylFBXd6cFszGsAX5goGgAg&start=20>
+{'keywords': 'workout',
+ 'link': 'https://www.nordstromrack.com',
+ 'positionID': 28,
+ 'title': "Men's Gym & Workout | Nordstrom Rack"}
+2019-07-31 11:31:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=zlFBXY-ADIPcsAXZnr7oAw&start=30> (referer: https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=ylFBXd6cFszGsAX5goGgAg&start=20)
+2019-07-31 11:31:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=zlFBXY-ADIPcsAXZnr7oAw&start=30>
+{'keywords': 'workout',
+ 'link': 'https://f45training.com',
+ 'positionID': 29,
+ 'title': 'Workouts - F45'}
+2019-07-31 11:31:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=zlFBXY-ADIPcsAXZnr7oAw&start=30>
+{'keywords': 'workout',
+ 'link': 'https://www.9round.com',
+ 'positionID': 30,
+ 'title': '9Round Kickboxing Franchises - Complete Fitness Workout With A ...'}
+2019-07-31 11:31:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=zlFBXY-ADIPcsAXZnr7oAw&start=30>
+{'keywords': 'workout',
+ 'link': 'https://dictionary.cambridge.org',
+ 'positionID': 31,
+ 'title': 'Перевод workout с английского на русский: Cambridge Dictionary'}
+2019-07-31 11:31:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=zlFBXY-ADIPcsAXZnr7oAw&start=30>
+{'keywords': 'workout',
+ 'link': 'https://www.popsugar.com',
+ 'positionID': 32,
+ 'title': '10-Minute Home Ab Workout | POPSUGAR Fitness'}
+2019-07-31 11:31:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=zlFBXY-ADIPcsAXZnr7oAw&start=30>
+{'keywords': 'workout',
+ 'link': 'https://connect.garmin.com',
+ 'positionID': 33,
+ 'title': 'Garmin Workouts - Garmin Connect'}
+2019-07-31 11:31:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=zlFBXY-ADIPcsAXZnr7oAw&start=30>
+{'keywords': 'workout',
+ 'link': 'https://www.equibase.com',
+ 'positionID': 34,
+ 'title': 'Workouts - Equibase'}
+2019-07-31 11:31:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=zlFBXY-ADIPcsAXZnr7oAw&start=30>
+{'keywords': 'workout',
+ 'link': 'https://www.nike.com',
+ 'positionID': 35,
+ 'title': "Men's Workout Shoes. Nike.com"}
+2019-07-31 11:31:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=zlFBXY-ADIPcsAXZnr7oAw&start=30>
+{'keywords': 'workout',
+ 'link': 'https://gb.kyivcity.gov.ua',
+ 'positionID': 36,
+ 'title': 'Встановлення спортивного майданчику Workout в СЗШ №43, що ...'}
+2019-07-31 11:31:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=zlFBXY-ADIPcsAXZnr7oAw&start=30>
+{'keywords': 'workout',
+ 'link': 'https://help.fitbit.com',
+ 'positionID': 37,
+ 'title': 'Help article: How do I track my workouts with my Fitbit device?'}
+2019-07-31 11:31:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=zlFBXY-ADIPcsAXZnr7oAw&start=30>
+{'keywords': 'workout',
+ 'link': 'https://www.adidas.com',
+ 'positionID': 38,
+ 'title': "Men's Workout & Training Shoes | adidas US"}
+2019-07-31 11:31:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=0VFBXZGQPM3UtQXDt5-IBA&start=40> (referer: https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=zlFBXY-ADIPcsAXZnr7oAw&start=30)
+2019-07-31 11:31:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=0VFBXZGQPM3UtQXDt5-IBA&start=40>
+{'keywords': 'workout',
+ 'link': 'https://www.yakaboo.ua',
+ 'positionID': 39,
+ 'title': 'Книги про Street Workout • купити книги про вуличні тренування в '
+          '...'}
+2019-07-31 11:31:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=0VFBXZGQPM3UtQXDt5-IBA&start=40>
+{'keywords': 'workout',
+ 'link': 'https://www.victoriassecret.com',
+ 'positionID': 40,
+ 'title': "Women's Sport & Workout Apparel Sale - Victoria's Secret"}
+2019-07-31 11:31:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=0VFBXZGQPM3UtQXDt5-IBA&start=40>
+{'keywords': 'workout',
+ 'link': 'https://www.target.com',
+ 'positionID': 41,
+ 'title': "Women's Workout Shorts & Skirts : Target"}
+2019-07-31 11:31:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=0VFBXZGQPM3UtQXDt5-IBA&start=40>
+{'keywords': 'workout',
+ 'link': 'https://www.crossfitmayhem.com',
+ 'positionID': 42,
+ 'title': 'Daily Workout — CrossFit Mayhem'}
+2019-07-31 11:31:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=0VFBXZGQPM3UtQXDt5-IBA&start=40>
+{'keywords': 'workout',
+ 'link': 'https://www.alaninu.com',
+ 'positionID': 43,
+ 'title': 'Pre-Workout – Alani Nu'}
+2019-07-31 11:31:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=0VFBXZGQPM3UtQXDt5-IBA&start=40>
+{'keywords': 'workout',
+ 'link': 'https://www.forever21.com',
+ 'positionID': 44,
+ 'title': "Women's Activewear & Workout Clothes | WOMEN | Forever 21"}
+2019-07-31 11:31:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=workout&ie=UTF-8&ei=0VFBXZGQPM3UtQXDt5-IBA&start=40>
+{'keywords': 'workout',
+ 'link': 'https://www.myprotein.com',
+ 'positionID': 45,
+ 'title': 'Pre-Workout | Pre, Intra & Post-Workout | MYPROTEIN™'}
+2019-07-31 11:31:21 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-07-31 11:31:21 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1605,
+ 'downloader/request_count': 5,
+ 'downloader/request_method_count/GET': 5,
+ 'downloader/response_bytes': 215174,
+ 'downloader/response_count': 5,
+ 'downloader/response_status_count/200': 5,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 7, 31, 8, 31, 21, 608374),
+ 'item_scraped_count': 45,
+ 'log_count/DEBUG': 50,
+ 'log_count/INFO': 9,
+ 'memusage/max': 69488640,
+ 'memusage/startup': 69488640,
+ 'request_depth_max': 4,
+ 'response_received_count': 5,
+ 'scheduler/dequeued': 5,
+ 'scheduler/dequeued/memory': 5,
+ 'scheduler/enqueued': 5,
+ 'scheduler/enqueued/memory': 5,
+ 'start_time': datetime.datetime(2019, 7, 31, 8, 31, 1, 740877)}
+2019-07-31 11:31:21 [scrapy.core.engine] INFO: Spider closed (finished)

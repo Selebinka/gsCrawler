@@ -1,0 +1,70 @@
+2019-07-31 09:21:41 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: scrapy_app)
+2019-07-31 09:21:41 [scrapy.utils.log] INFO: Versions: lxml 4.3.4.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.1, Python 3.6.8 (default, Jan 14 2019, 11:02:34) - [GCC 8.0.1 20180414 (experimental) [trunk revision 259383]], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.7, Platform Linux-4.18.0-25-generic-x86_64-with-Ubuntu-18.04-bionic
+2019-07-31 09:21:41 [scrapy.crawler] INFO: Overridden settings: {'AUTOTHROTTLE_ENABLED': True, 'AUTOTHROTTLE_START_DELAY': 3, 'BOT_NAME': 'scrapy_app', 'COOKIES_ENABLED': False, 'LOG_FILE': 'logs/default/googlesearch/72a0df40b35b11e9a026e4115b35c2d0.log', 'NEWSPIDER_MODULE': 'scrapy_app.spiders', 'SPIDER_MODULES': ['scrapy_app.spiders'], 'USER_AGENT': 'Chrome/61.0.3163.79'}
+2019-07-31 09:21:41 [scrapy.extensions.telnet] INFO: Telnet Password: af68553e14c83e41
+2019-07-31 09:21:41 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2019-07-31 09:21:41 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-07-31 09:21:41 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-07-31 09:21:41 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_app.pipelines.ScrapyAppPipeline']
+2019-07-31 09:21:41 [scrapy.core.engine] INFO: Spider opened
+2019-07-31 09:21:41 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-07-31 09:21:41 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-07-31 09:21:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.google.com.ua/search?q=kiev> (referer: None)
+2019-07-31 09:21:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=kiev>
+{'keywords': 'kiev',
+ 'link': 'https://wondersholidays.com',
+ 'positionID': 1,
+ 'title': '"Kiev" или "Kyiv": Как правильно по-английски | Wonders & Holidays'}
+2019-07-31 09:21:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=kiev>
+{'keywords': 'kiev',
+ 'link': 'https://ru.wikipedia.org',
+ 'positionID': 2,
+ 'title': 'Киев — Википедия'}
+2019-07-31 09:21:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.google.com.ua/search?q=kiev>
+{'keywords': 'kiev',
+ 'link': 'https://en.wikipedia.org',
+ 'positionID': 3,
+ 'title': 'Kiev - Wikipedia'}
+2019-07-31 09:21:45 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-07-31 09:21:45 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 214,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 113608,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 7, 31, 6, 21, 45, 619205),
+ 'item_scraped_count': 3,
+ 'log_count/DEBUG': 4,
+ 'log_count/INFO': 9,
+ 'memusage/max': 69328896,
+ 'memusage/startup': 69328896,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2019, 7, 31, 6, 21, 41, 760009)}
+2019-07-31 09:21:45 [scrapy.core.engine] INFO: Spider closed (finished)

@@ -4,7 +4,7 @@
 {% block login %}
 <div class="container">
     <div class="row">
-        <div class="col-lg-4 offset-3">
+        <div class="col-lg-4 offset-3 my-5">
             <form class="form-login" action="/auth/login/", method="post" style="color: #757575;">
                 {% csrf_token %}
                 <div class="form-group">
@@ -15,7 +15,7 @@
                     <label for="password">Пароль</label>
                     <input type="password" class="form-control" name="password" id="password">
                 </div>
-                <button class="btn btn-outline-info " type="submit">Войти</button>
+                <button class="btn btn-outline-info" type="submit">Войти</button>
                 {% if login_error %}
                     <label class="error">{{ login_error }}</label>
                 {% endif %}

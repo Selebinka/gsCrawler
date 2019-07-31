@@ -17,55 +17,63 @@
     
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                {% if username %}
+                <li class="nav-item active">    
                     <a class="nav-link" href="{% url 'manager_spider' %}">Manager spider<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'search_result' %}">Result</a>
                 </li>
+                {% endif %}
             </ul>
             <ul class="nav justify-content-end">
                 {% if username %}
                     <li><a class="nav-link" href="/auth/logout/">Выйти ({{ username }})</a></li>
+                    <li><a class="nav-link" href="/admin">Admin</a></li>
                 {% else %}
-                    <li><a class="nav-link" href="/auth/login/">Войти</a></li>
+                    <li><a class="nav-link" href="/">Войти</a></li>
                 {% endif %}
             </ul>
         </div>
     </nav>
 
+    {% if username %}
+
         {% block content %}
         {% endblock%}
-    <!-- {% if username %}
-        
+
     {% else %}
-    <div class="container">
-            <div class="row">
-                <div class="col-lg-4 offset-3">
-                    <form class="form-login" action="/auth/login/", method="post" style="color: #757575;">
-                        {% csrf_token %}
-                        <div class="form-group">
-                            <label for="username">Имя пользователя</label>
-                            <input type="text" class="form-control" name="username" id="username">
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Пароль</label>
-                            <input type="password" class="form-control" name="password" id="password">
-                        </div>
-                        <button class="btn btn-outline-info " type="submit">Войти</button>
-                        {% if login_error %}
-                            <label class="error">{{ login_error }}</label>
-                        {% endif %}
-                        <div class="btn btn-light btn-sm"><a href="/auth/register/">Регистрация</a></div>
-                    </form>
+        <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 offset-3 my-5">
+                        <form class="form-login" action="/auth/login/", method="post" style="color: #757575;">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label for="username">Имя пользователя</label>
+                                <input type="text" class="form-control" name="username" id="username">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Пароль</label>
+                                <input type="password" class="form-control" name="password" id="password">
+                            </div>
+                            <button class="btn btn-outline-info" type="submit">Войти</button>
+                            {% if login_error %}
+                                <label class="error">{{ login_error }}</label>
+                            {% endif %}
+                            <div class="btn btn-light btn-sm"><a href="/auth/register/">Регистрация</a></div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-    {% endif %} -->
+            
+    {% endif %}
 
     {% block login %}
     {% endblock %} 
+
+    
+
+    
     
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -1,15 +1,17 @@
 {% extends 'base.html' %}
 
+{% load crispy_forms_tags %}
 
 {% block content %}
-<div class="col-lg-8 offset-3">
-    <form class="my-5" action="/result/" method="post">
-        {% csrf_token %}  
-            {{ form }}
-        <input type="submit" class="btn btn-primary my-2" value="RunCrawl">
-    </form>
-    
-</div>    
+<div class="card text-white bg-light mt-3 offset-5" style="max-width: 20rem;">
+    <div class="card-body text-dark">
+        <form class="my-5" action="/result/" method="post">
+            {% csrf_token %}  
+            {{ form|crispy }}
+            <input type="submit" class="btn btn-outline-info " style="border-radius: 10px" value="RunCrawl">
+        </form>
+    </div> 
+</div>   
 
 {% endblock %}
 

@@ -3,11 +3,11 @@
 {% load widget_tweaks %}
 
 {% block content %}
-<div class="card border-dark mb-2 mt-2">
+<div class="p-3 mb-2 bg-light text-dark sticky-top border-bottom border-info">
         <form method="get">
             <div class="well">
-                <div class="row">
-                    <div class="form-group col-sm-4 col-md-3">
+                <div class="row ml-5">
+                    <div class="form-group col-md-3">
                         {{ result_filter.form.keywords.label_tag }}
                         {% render_field result_filter.form.keywords class="form-control" %}
                     </div>
@@ -19,10 +19,9 @@
                         {{ result_filter.form.date.label_tag }}
                         {% render_field result_filter.form.date class="form-control" %}
                     </div>            
-                    <div class="form-group mt-4">
-                        <button type="submit" class="btn btn-primary">
-                            <span class="glyphicon glyphicon-search"></span>Search
-                        </button>
+                    <button type="submit" class="btn btn-info d-block mx-auto" style="border-radius: 30px">
+                        <span class="glyphicon glyphicon-search"></span>Search
+                    </button>
                     </div>
                 </div>
             </div>
@@ -44,7 +43,7 @@
             <tbody>
             {% for result in result_filter.qs %}
                 <tr>
-                    <th scope="row">{{ result.date }}</th>
+                    <th scope="row">{{ result.date|date:"d.m.Y" }}</th>
                     <td>{{ result.keywords }}</td>
                     <td>{{ result.title }}</td>                            
                     <td><a href="{{ result.link }}">{{ result.link }}</a></td>

@@ -43,7 +43,7 @@
             <tbody>
             {% for result in result_filter.qs %}
                 <tr>
-                    <th scope="row">{{ result.date|date:"d.m.Y" }}</th>
+                    <th scope="row">{{ result.date|date:"Y-m-d" }}</th>
                     <td>{{ result.keywords }}</td>
                     <td>{{ result.title }}</td>                            
                     <td><a href="{{ result.link }}">{{ result.link }}</a></td>

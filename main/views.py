@@ -10,6 +10,9 @@ from .forms import RunCrawlForm
 
 from scrapyd_api import ScrapydAPI
 
+from rest_framework.response import Response
+from rest_framework.views import APIView
+
 
 scrapyd = ScrapydAPI('http://localhost:6800')
 

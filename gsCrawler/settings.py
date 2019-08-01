@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'main',
     'loginsys',
     'scrapy_app',
+    'rest_framework',
 
     'django_filters',
     'widget_tweaks',
@@ -60,6 +61,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+REST_FRAMEWORK = { 'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema' }
 ROOT_URLCONF = 'gsCrawler.urls'
 
 TEMPLATES = [

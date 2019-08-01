@@ -15,11 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-
+from main.api.viewsets import ResultSearchList
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('auth/', include('loginsys.urls')),
     path('', include('main.urls')),
+
+    #url for API
+    path('api/', ResultSearchList.as_view())
 ]

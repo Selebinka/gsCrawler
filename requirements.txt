@@ -1,6 +1,6 @@
   
 Django>=2.2.3    
-Scrapy==1.6.0
+Scrapy==2.6.2
     
 scrapy-djangoitem==1.1.1    
 scrapyd==1.2.1
